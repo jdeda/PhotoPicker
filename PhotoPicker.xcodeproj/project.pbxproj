@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		97ED3F8A2A425739009C7026 /* PhotoPickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ED3F892A425739009C7026 /* PhotoPickerApp.swift */; };
-		97ED3F8C2A425739009C7026 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ED3F8B2A425739009C7026 /* ContentView.swift */; };
+		971582752A4262290064AEF9 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 971582742A4262290064AEF9 /* ComposableArchitecture */; };
+		97E068312A426CAB00D9844D /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E068302A426CAB00D9844D /* AppView.swift */; };
+		97ED3F8A2A425739009C7026 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ED3F892A425739009C7026 /* Main.swift */; };
 		97ED3F8E2A42573E009C7026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97ED3F8D2A42573E009C7026 /* Assets.xcassets */; };
 		97ED3F912A42573E009C7026 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97ED3F902A42573E009C7026 /* Preview Assets.xcassets */; };
-		97ED3F9B2A42573F009C7026 /* PhotoPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ED3F9A2A42573F009C7026 /* PhotoPickerTests.swift */; };
-		97ED3FA52A42573F009C7026 /* PhotoPickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ED3FA42A42573F009C7026 /* PhotoPickerUITests.swift */; };
-		97ED3FA72A42573F009C7026 /* PhotoPickerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ED3FA62A42573F009C7026 /* PhotoPickerUITestsLaunchTests.swift */; };
+		97ED3F9B2A42573F009C7026 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ED3F9A2A42573F009C7026 /* AppTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,16 +33,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		97E068302A426CAB00D9844D /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		97ED3F862A425739009C7026 /* PhotoPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		97ED3F892A425739009C7026 /* PhotoPickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerApp.swift; sourceTree = "<group>"; };
-		97ED3F8B2A425739009C7026 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		97ED3F892A425739009C7026 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		97ED3F8D2A42573E009C7026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97ED3F902A42573E009C7026 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		97ED3F962A42573F009C7026 /* PhotoPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		97ED3F9A2A42573F009C7026 /* PhotoPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerTests.swift; sourceTree = "<group>"; };
+		97ED3F9A2A42573F009C7026 /* AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTests.swift; sourceTree = "<group>"; };
 		97ED3FA02A42573F009C7026 /* PhotoPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		97ED3FA42A42573F009C7026 /* PhotoPickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerUITests.swift; sourceTree = "<group>"; };
-		97ED3FA62A42573F009C7026 /* PhotoPickerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				971582752A4262290064AEF9 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +74,6 @@
 			children = (
 				97ED3F882A425739009C7026 /* PhotoPicker */,
 				97ED3F992A42573F009C7026 /* PhotoPickerTests */,
-				97ED3FA32A42573F009C7026 /* PhotoPickerUITests */,
 				97ED3F872A425739009C7026 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,8 +91,8 @@
 		97ED3F882A425739009C7026 /* PhotoPicker */ = {
 			isa = PBXGroup;
 			children = (
-				97ED3F892A425739009C7026 /* PhotoPickerApp.swift */,
-				97ED3F8B2A425739009C7026 /* ContentView.swift */,
+				97ED3F892A425739009C7026 /* Main.swift */,
+				97E068302A426CAB00D9844D /* AppView.swift */,
 				97ED3F8D2A42573E009C7026 /* Assets.xcassets */,
 				97ED3F8F2A42573E009C7026 /* Preview Content */,
 			);
@@ -113,18 +110,9 @@
 		97ED3F992A42573F009C7026 /* PhotoPickerTests */ = {
 			isa = PBXGroup;
 			children = (
-				97ED3F9A2A42573F009C7026 /* PhotoPickerTests.swift */,
+				97ED3F9A2A42573F009C7026 /* AppTests.swift */,
 			);
 			path = PhotoPickerTests;
-			sourceTree = "<group>";
-		};
-		97ED3FA32A42573F009C7026 /* PhotoPickerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				97ED3FA42A42573F009C7026 /* PhotoPickerUITests.swift */,
-				97ED3FA62A42573F009C7026 /* PhotoPickerUITestsLaunchTests.swift */,
-			);
-			path = PhotoPickerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +131,9 @@
 			dependencies = (
 			);
 			name = PhotoPicker;
+			packageProductDependencies = (
+				971582742A4262290064AEF9 /* ComposableArchitecture */,
+			);
 			productName = PhotoPicker;
 			productReference = 97ED3F862A425739009C7026 /* PhotoPicker.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +206,9 @@
 				Base,
 			);
 			mainGroup = 97ED3F7D2A425738009C7026;
+			packageReferences = (
+				971582732A4262290064AEF9 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 97ED3F872A425739009C7026 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +251,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97ED3F8C2A425739009C7026 /* ContentView.swift in Sources */,
-				97ED3F8A2A425739009C7026 /* PhotoPickerApp.swift in Sources */,
+				97E068312A426CAB00D9844D /* AppView.swift in Sources */,
+				97ED3F8A2A425739009C7026 /* Main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97ED3F9B2A42573F009C7026 /* PhotoPickerTests.swift in Sources */,
+				97ED3F9B2A42573F009C7026 /* AppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97ED3FA52A42573F009C7026 /* PhotoPickerUITests.swift in Sources */,
-				97ED3FA72A42573F009C7026 /* PhotoPickerUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +575,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		971582732A4262290064AEF9 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.54.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		971582742A4262290064AEF9 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 971582732A4262290064AEF9 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 97ED3F7E2A425738009C7026 /* Project object */;
 }
