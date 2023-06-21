@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		971582752A4262290064AEF9 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 971582742A4262290064AEF9 /* ComposableArchitecture */; };
 		97E068312A426CAB00D9844D /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E068302A426CAB00D9844D /* AppView.swift */; };
+		97E068332A42722A00D9844D /* PhotosClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E068322A42722A00D9844D /* PhotosClient.swift */; };
 		97ED3F8A2A425739009C7026 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ED3F892A425739009C7026 /* Main.swift */; };
 		97ED3F8E2A42573E009C7026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97ED3F8D2A42573E009C7026 /* Assets.xcassets */; };
 		97ED3F912A42573E009C7026 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97ED3F902A42573E009C7026 /* Preview Assets.xcassets */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		97E068302A426CAB00D9844D /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		97E068322A42722A00D9844D /* PhotosClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosClient.swift; sourceTree = "<group>"; };
 		97ED3F862A425739009C7026 /* PhotoPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97ED3F892A425739009C7026 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		97ED3F8D2A42573E009C7026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			children = (
 				97ED3F892A425739009C7026 /* Main.swift */,
 				97E068302A426CAB00D9844D /* AppView.swift */,
+				97E068322A42722A00D9844D /* PhotosClient.swift */,
 				97ED3F8D2A42573E009C7026 /* Assets.xcassets */,
 				97ED3F8F2A42573E009C7026 /* Preview Content */,
 			);
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97E068312A426CAB00D9844D /* AppView.swift in Sources */,
+				97E068332A42722A00D9844D /* PhotosClient.swift in Sources */,
 				97ED3F8A2A425739009C7026 /* Main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +416,7 @@
 				DEVELOPMENT_TEAM = ME637H7ZM9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Provide access to upload photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -441,6 +446,7 @@
 				DEVELOPMENT_TEAM = ME637H7ZM9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Provide access to upload photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

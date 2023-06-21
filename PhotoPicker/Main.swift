@@ -4,7 +4,10 @@ import SwiftUI
 struct PhotoPickerApp: App {
   var body: some Scene {
     WindowGroup {
-      AppView()
+      AppView(store: .init(
+        initialState: .init(),
+        reducer: AppReducer.init
+      ))
     }
   }
 }
